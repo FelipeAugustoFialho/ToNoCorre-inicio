@@ -1,35 +1,38 @@
-*{
+* {
     padding: 0;
     box-sizing: border-box;
     margin: 0;
-    
+
 }
-body{
+
+body {
     background-image: url(./back1.jpeg);
     background-size: cover;
     background-position: top;
 }
-.h1{
-display: flex;
-justify-content: center;
-text-align: center;
-margin: auto;
-margin-top: 50px;
-width: 767px;
-margin-top: 10px;
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 767px;
+    margin-top: 10px;
 
 }
-.h2{
+
+.h2 {
     display: flex;
     justify-content: center;
     text-align: center;
     margin: auto;
     margin-top: 50px;
     width: 500px;
-    }
+}
 
 
-.Menu{
+.Menu {
 
     display: flex;
     flex-wrap: wrap;
@@ -41,58 +44,62 @@ margin-top: 10px;
     background-color: #FFFFFF;
     opacity: 0.5;
 
-    
+
 
 }
-.links-menu{
-height: 100px;
-width: 130px;
 
-font-size: 50px;
-text-align: center;
-margin: auto;
+.links-menu {
+    height: 100px;
+    width: 130px;
 
-color: black;
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+
+    color: black;
 
 }
-a{
-    
+
+a {
+
     text-decoration: none;
     color: black;
-   
+
 }
 
-p{
- font-size: 20px;
- font-weight: bold;
+p {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
 
 
-    body{
+    body {
         background-attachment: fixed;
-       
+
     }
 
-    .h1{
-width: 380px;
-background-color: #FFFFFF;
-border: solid 4px black;
-opacity: 0.6;
+    .h1 {
+        width: 380px;
+        background-color: #FFFFFF;
+        border: solid 4px black;
+        opacity: 0.6;
     }
-    .h2{
-        width: 350px;
-background-color: #FFFFFF;
-border: solid 4px black;
-opacity: 0.6;
+
+    .h2 {
+        width: 80vw;
+        background-color: #FFFFFF;
+        border: solid 4px black;
+        opacity: 0.6;
     }
-    .Menu{
+
+    .Menu {
         width: 350px;
         border: solid 8px black;
         background-color: #FFFFFF;
         opacity: 0.6;
 
     }
-    
-    }
+
+}
