@@ -2,23 +2,54 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
-
 }
 
 body {
     background-image: url(./back1.jpeg);
     background-size: cover;
     background-position: top;
+    overflow: hidden;
+    position: relative;
+    /*
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    */
 }
+
+/* Efeito de bordas desfocadas */
+body::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    z-index: 0;
+    background: inherit;
+    filter: blur(20px);
+    mask-image: radial-gradient(circle at center, transparent 50%, black 100%);
+    -webkit-mask-image: radial-gradient(circle at center, transparent 50%, black 100%);
+    pointer-events: none;
+}
+
+/* Conteúdo por cima do efeito */
+.h1,
+.h2,
+.Menu {
+    position: relative;
+    z-index: 1;
+}
+
 
 .h1 {
     display: flex;
     justify-content: center;
     text-align: center;
     margin: auto;
-    margin-top: 50px;
     width: 767px;
     margin-top: 10px;
+
 
 }
 
@@ -41,36 +72,84 @@ body {
     width: 500px;
     height: 350px;
     margin-top: 40px;
-    background-color: #FFFFFF;
-    opacity: 0.5;
+    background: rgba(255, 255, 255, 0.1);
 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 
+    opacity: 1.5;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 
 }
 
+
+
+
+.Menu button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.Menu button:hover {
+    background-color: #0056b3;
+}
+
+
+
 .links-menu {
+
     height: 100px;
     width: 130px;
 
     font-size: 50px;
     text-align: center;
     margin: auto;
-
     color: black;
 
+
+
+
 }
+
+.links-menu:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color 1s ease;
+    border-radius: 20px;
+}
+
 
 a {
-
     text-decoration: none;
     color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0056b3;
+    cursor: pointer;
+    border: black;
+    height: 120px;
+    width: 140px;
+    font-size: 55px;
+    transition: 1s;
 
 }
+
+
 
 p {
     font-size: 20px;
     font-weight: bold;
+
 }
+
 
 @media screen and (max-width: 700px) {
 
@@ -80,26 +159,32 @@ p {
 
     }
 
+
+
     .h1 {
         width: 380px;
-        background-color: #FFFFFF;
-        border: solid 4px black;
-        opacity: 0.6;
     }
+
+
 
     .h2 {
         width: 80vw;
         background-color: #FFFFFF;
-        border: solid 4px black;
-        opacity: 0.6;
+
+
     }
+
 
     .Menu {
         width: 350px;
         border: solid 8px black;
-        background-color: #FFFFFF;
-        opacity: 0.6;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        /* Suporte para Safari */
+        opacity: 1.5;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
 
     }
-
 }
