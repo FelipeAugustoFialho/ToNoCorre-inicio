@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 * {
     padding: 0;
     box-sizing: border-box;
@@ -36,7 +37,8 @@ body::before {
 /* Conteúdo por cima do efeito */
 .h1,
 .h2,
-.Menu {
+.Menu,
+footer {
     position: relative;
     z-index: 1;
 }
@@ -71,7 +73,8 @@ body::before {
     border: solid 8px black;
     width: 500px;
     height: 350px;
-    margin-top: 40px;
+    margin-top: 23px;
+    margin-bottom: 100px;
     background: rgba(255, 255, 255, 0.1);
 
     backdrop-filter: blur(15px);
@@ -95,6 +98,7 @@ body::before {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease;
+
 }
 
 .Menu button:hover {
@@ -128,9 +132,10 @@ body::before {
 a {
     text-decoration: none;
     color: black;
+    margin-top: 10px;
 }
 
-a:hover {
+interactMenu:hover {
     text-decoration: none;
     color: #0056b3;
     cursor: pointer;
@@ -146,10 +151,53 @@ a:hover {
 
 p {
     font-size: 20px;
-    font-weight: bold;
+   
 
 }
 
+footer {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    gap: 30px;
+    height: 50px;
+    background-color: #202020;
+
+  
+
+
+}
+
+
+.pFooter {
+
+    font-size: 15px;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-top: 19px;
+    margin-left: 136px;
+    margin-right: 53px;
+    font-family: Poppins;
+}
+
+.bi-linkedin {
+    color: rgb(10, 100, 198);
+}
+
+.bi-google {
+    color: darkred;
+}
+
+.bi-github {
+
+    color: #FFFFFF;
+
+}
+
+.bi-browser-edge {
+    color: #004aad;
+}
 
 @media screen and (max-width: 700px) {
 
