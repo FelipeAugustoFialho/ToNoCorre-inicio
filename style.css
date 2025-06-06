@@ -221,13 +221,28 @@ footer {
     color: #004aad;
 }
 
+
 @media screen and (max-width: 700px) {
-
-
-    body {
-        background-attachment: fixed;
-
+    
+   
+    html, body {
+        overflow-x: hidden;
     }
+
+    
+    body::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background: inherit;
+        filter: blur(20px);
+        pointer-events: none;
+    }
+
+   
+   
+
 
 
 
