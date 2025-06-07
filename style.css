@@ -227,6 +227,7 @@ footer {
    
     html, body {
         overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     
@@ -235,9 +236,10 @@ footer {
         position: absolute;
         inset: 0;
         z-index: 0;
-        background: inherit;
+        background: cover;
         filter: blur(20px);
         pointer-events: none;
+        height: 100%;
     }
 
    
@@ -310,7 +312,7 @@ footer {
     height: 77px;
     width: 100vw;
     background-color: #202020;
-      margin-top: 252px;
+      margin-top: 244px;
     }
     
     .pFooter{
