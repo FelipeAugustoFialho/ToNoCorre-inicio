@@ -280,7 +280,7 @@ footer {
     margin-top: 8px;
      display: inline-flex;
      gap: 10px;
-     margin-left: 60px;
+     margin-left: 70px;
 
 }
     
@@ -289,19 +289,19 @@ footer {
     display: inline-flex;
       margin-top: 8px;
     gap: 10px;
-    margin-left: 60px;
+    margin-left: 35px;
 }
 .bi-github{
     display: inline-flex;
   margin-top: 8px;
     gap: 10px;
-    margin-left: 60px;
+    margin-left: 35px;
 }
 .bi-browser-edge{
     display: inline-flex;
   margin-top: 8px;
     gap: 10px;
-    margin-left: 60px;
+    margin-left: 35px;
 }
  footer{
      color: #FFFFFF;
@@ -312,12 +312,13 @@ footer {
     height: 77px;
     width: 100vw;
     background-color: #202020;
-      margin-top: 244px;
+      margin-top: 72px;
+      
     }
     
     .pFooter{
         font-size: 12px;
-        margin-left: 48px;
+        margin-left: 40px;
         margin-top: -22px;
     }
 
@@ -325,8 +326,8 @@ footer {
     font-size: 12px;
     justify-content: center;
     margin-top: -18px;
-    margin-left: 189px;
-    margin-right: 36px;
+          margin-left: 173px;
+        margin-right: 10px;
    
     
 }
@@ -336,7 +337,7 @@ footer {
         justify-content: center;
          margin-top: 1px;
         margin-bottom: -4px;
-        margin-left: 157px;
+        margin-left: 125px;
         margin-right: 35px;
         
 }
