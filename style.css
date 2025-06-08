@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 * {
     padding: 0;
     box-sizing: border-box;
@@ -151,7 +152,7 @@ interactMenu:hover {
 
 p {
     font-size: 20px;
-   
+
 
 }
 
@@ -164,7 +165,7 @@ footer {
     height: 50px;
     background-color: #202020;
 
-  
+
 
 
 }
@@ -223,14 +224,15 @@ footer {
 
 
 @media screen and (max-width: 700px) {
-    
-   
-    html, body {
+
+
+    html,
+    body {
         overflow-x: hidden;
         overflow-y: hidden;
     }
 
-    
+
     body::before {
         content: '';
         position: absolute;
@@ -242,8 +244,8 @@ footer {
         height: 100%;
     }
 
-   
-   
+
+
 
 
 
@@ -275,71 +277,76 @@ footer {
         margin-bottom: 0px;
 
     }
-/*------------------------------------*/
-    .bi-linkedin{
-    margin-top: 8px;
-     display: inline-flex;
-     gap: 10px;
-     margin-left: 70px;
 
-}
-    
+    /*------------------------------------*/
+    .bi-linkedin {
+        margin-top: 8px;
+        display: inline-flex;
+        gap: 10px;
+        margin-left: 70px;
 
-.bi-google{
-    display: inline-flex;
-      margin-top: 8px;
-    gap: 10px;
-    margin-left: 35px;
-}
-.bi-github{
-    display: inline-flex;
-  margin-top: 8px;
-    gap: 10px;
-    margin-left: 35px;
-}
-.bi-browser-edge{
-    display: inline-flex;
-  margin-top: 8px;
-    gap: 10px;
-    margin-left: 35px;
-}
- footer{
-     color: #FFFFFF;
-    display: block;
-    justify-content: center;
-    font-size: 25px;
-    gap: 30px;
-    height: 77px;
-    width: 100vw;
-    background-color: #202020;
-      margin-top: 72px;
-      
     }
-    
-    .pFooter{
+
+
+    .bi-google {
+        display: inline-flex;
+        margin-top: 8px;
+        gap: 10px;
+        margin-left: 35px;
+    }
+
+    .bi-github {
+        display: inline-flex;
+        margin-top: 8px;
+        gap: 10px;
+        margin-left: 35px;
+    }
+
+    .bi-browser-edge {
+        display: inline-flex;
+        margin-top: 8px;
+        gap: 10px;
+        margin-left: 35px;
+    }
+
+    footer {
+        color: #FFFFFF;
+        display: block;
+        justify-content: center;
+        font-size: 25px;
+        gap: 30px;
+        height: 77px;
+        width: 100vw;
+        background-color: #202020;
+        margin-top: 143px;
+
+    }
+
+    .pFooter {
         font-size: 12px;
         margin-left: 40px;
         margin-top: -22px;
     }
 
     .p2Footer {
-    font-size: 12px;
-    justify-content: center;
-    margin-top: -18px;
-          margin-left: 173px;
-        margin-right: 10px;
-   
-    
-}
-.p3Footer {
-
-  font-size: 12px;
+        font-size: 12px;
         justify-content: center;
-         margin-top: 1px;
+        margin-top: -18px;
+        margin-left: 173px;
+        margin-right: 10px;
+
+
+    }
+
+    .p3Footer {
+
+        font-size: 12px;
+        justify-content: center;
+        margin-top: 1px;
         margin-bottom: -4px;
         margin-left: 125px;
         margin-right: 35px;
-        
-}
+
+    }
 
 }
