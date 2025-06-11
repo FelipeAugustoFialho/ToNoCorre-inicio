@@ -194,7 +194,7 @@ footer {
     margin-right: 53px;
     font-family: Poppins;
 }
-
+/*
 .p2Footer {
 
     font-size: 15px;
@@ -205,8 +205,8 @@ footer {
     margin-right: 53px;
     font-family: Poppins;
 }
-
-.p3Footer {
+*/
+.p2Footer {
 
     font-size: 15px;
     justify-content: center;
@@ -337,20 +337,21 @@ footer {
 
     .pFooter {
         font-size: 12px;
-        margin-left: 41px;
+        margin-left: 80px;
         margin-top: 4px;
     }
 
     .p2Footer {
         font-size: 12px;
         justify-content: center;
-        margin-top: -26px;
+        margin-top: -7px;
         margin-left: 165px;
         margin-right: -51px;
+        margin-bottom: 2px;
 
 
     }
-
+/*
     .p3Footer {
 
         font-size: 12px;
@@ -361,5 +362,7 @@ footer {
         margin-right: 35px;
 
     }
+
+    */
 
 }
