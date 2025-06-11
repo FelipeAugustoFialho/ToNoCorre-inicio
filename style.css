@@ -1,32 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 * {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 0;
 }
 
 body {
     background-image: url(./back1.jpeg);
     background-size: cover;
-    background-position: top;
-    overflow: hidden;
-    position: relative;
-    /*
-    position: relative;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    overflow: hidden;
-    */
+    position: relative;
 }
 
-/* Efeito de bordas desfocadas */
 body::before {
     content: '';
     position: absolute;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
+    inset: -20px;
     z-index: 0;
     background: inherit;
     filter: blur(20px);
@@ -35,7 +27,6 @@ body::before {
     pointer-events: none;
 }
 
-/* Conteúdo por cima do efeito */
 .h1,
 .h2,
 .Menu,
@@ -44,309 +35,134 @@ footer {
     z-index: 1;
 }
 
-
 .h1 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    width: 767px;
-    margin-top: 10px;
-
-
+    display: block;
+    max-width: 90%;
+    margin: 10px auto 0;
 }
 
 .h2 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    margin-top: 50px;
-    width: 500px;
+    display: block;
+    max-width: 80%;
+    margin: 50px auto 0;
 }
-
 
 .Menu {
-
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    border: solid 8px black;
-    width: 500px;
-    height: 350px;
-    margin-top: 23px;
-    margin-bottom: 100px;
+    justify-content: center;
+    gap: 20px;
+    max-width: 90%;
+    margin: 30px auto 100px;
+    padding: 20px;
     background: rgba(255, 255, 255, 0.1);
-
     backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-
-    opacity: 1.5;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
-
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    border-radius: 15px;
 }
-
-
-
-
-.Menu button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-
-}
-
-.Menu button:hover {
-    background-color: #0056b3;
-}
-
-
 
 .links-menu {
-
+    width: 120px;
     height: 100px;
-    width: 130px;
-
-    font-size: 50px;
+    font-size: 2.5rem;
     text-align: center;
-    margin: auto;
-    color: black;
-
-
-
-
+    transition: background-color 0.5s ease;
+    border-radius: 10px;
 }
 
 .links-menu:hover {
     background-color: rgba(255, 255, 255, 0.3);
-    transition: background-color 1s ease;
-    border-radius: 20px;
 }
 
-
-a {
-    text-decoration: none;
+.interactMenu {
+    display: block;
     color: black;
-    margin-top: 10px;
-}
-
-interactMenu:hover {
     text-decoration: none;
-    color: #0056b3;
-    cursor: pointer;
-    border: black;
-    height: 120px;
-    width: 140px;
-    font-size: 55px;
-    transition: 1s;
-
+    transition: color 0.3s ease;
 }
 
+.interactMenu:hover {
+    color: #0056b3;
+}
 
-
-p {
-    font-size: 20px;
-
-
+.interactMenu p {
+    font-size: 1rem;
+    margin-top: 5px;
 }
 
 footer {
-    color: #FFFFFF;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    font-size: 30px;
-    gap: 30px;
-    height: 50px;
+    align-items: center;
     background-color: #202020;
-
-
-
-
+    color: white;
+    gap: 10px 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+/*
+footer p {
+    flex: 1 1 100%;
+    margin: 5px 0;
+}
+*/
+.pFooter{
+    margin-left: 1px;
 }
 
-
-.pFooter {
-
-    font-size: 15px;
-    justify-content: center;
-    color: #FFFFFF;
-    margin-top: 19px;
-    margin-left: 136px;
-    margin-right: 53px;
-    font-family: Poppins;
+.p3Footer{
+    align-items: center;
+    
+    margin-left: 48px;
+}
+.linksFooter{
+    margin-top: 10px;
 }
 
-.p2Footer {
-
-    font-size: 15px;
-    justify-content: center;
-    color: #FFFFFF;
-    margin-top: 19px;
-    margin-left: 136px;
-    margin-right: 53px;
-    font-family: Poppins;
+footer a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: inherit;
+    transition: transform 0.3s ease;
 }
 
-.p3Footer {
-
-    font-size: 15px;
-    justify-content: center;
-    color: #FFFFFF;
-    margin-top: 19px;
-    margin-left: 136px;
-    margin-right: 53px;
-    font-family: Poppins;
+footer a:hover {
+    transform: scale(1.2);
 }
 
-.bi-linkedin {
-    color: rgb(10, 100, 198);
-}
+.bi-linkedin { color: #0a64c6; }
+.bi-google { color: darkred; }
+.bi-github { color: white; }
+.bi-browser-edge { color: #004aad; }
 
-.bi-google {
-    color: darkred;
-}
+@media (max-width: 600px) {
 
-.bi-github {
-
-    color: #FFFFFF;
-
-}
-
-.bi-browser-edge {
-    color: #004aad;
-}
-
-
-@media screen and (max-width: 700px) {
-
-
-    html,
-    body {
-        overflow-x: hidden;
-        overflow-y: hidden;
+    .links-menu {
+        width: 40%;
+        font-size: 2rem;
     }
 
-
-    body::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        z-index: 0;
-        background: cover;
-        filter: blur(20px);
-        pointer-events: none;
-        height: 100%;
+    .interactMenu p {
+        font-size: 0.9rem;
     }
-
-
-
-
-
-
 
     .h1 {
-        width: 380px;
+        max-width: 90%;
     }
-
-
 
     .h2 {
-        width: 80vw;
-        background-color: #FFFFFF;
-
-
-    }
-
-
-    .Menu {
-        width: 350px;
-        border: solid 8px black;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
-        /* Suporte para Safari */
-        opacity: 1.5;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        margin-bottom: 0px;
-
-    }
-
-    /*------------------------------------*/
-    .bi-linkedin {
-        margin-top: 8px;
-        display: inline-flex;
-        gap: 10px;
-        margin-left: 70px;
-
-    }
-
-
-    .bi-google {
-        display: inline-flex;
-        margin-top: 8px;
-        gap: 10px;
-        margin-left: 35px;
-    }
-
-    .bi-github {
-        display: inline-flex;
-        margin-top: 8px;
-        gap: 10px;
-        margin-left: 35px;
-    }
-
-    .bi-browser-edge {
-        display: inline-flex;
-        margin-top: 8px;
-        gap: 10px;
-        margin-left: 35px;
+        max-width: 90%;
     }
 
     footer {
-        color: #FFFFFF;
-        display: block;
-        justify-content: center;
-        font-size: 25px;
-        gap: 30px;
-        height: 77px;
-        width: 100vw;
-        background-color: #202020;
-        margin-top: 146px;
-
+        flex-direction: row;
+        font-size: 0.8rem;
     }
 
-    .pFooter {
-        font-size: 12px;
-        margin-left: 40px;
-        margin-top: -22px;
+    footer a {
+        font-size: 1.3rem;
     }
-
-    .p2Footer {
-        font-size: 12px;
-        justify-content: center;
-        margin-top: -18px;
-        margin-left: 173px;
-        margin-right: 10px;
-
-
-    }
-
-    .p3Footer {
-
-        font-size: 12px;
-        justify-content: center;
-        margin-top: 1px;
-        margin-bottom: -4px;
-        margin-left: 125px;
-        margin-right: 35px;
-
-    }
-
 }
