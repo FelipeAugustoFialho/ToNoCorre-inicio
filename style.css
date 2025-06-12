@@ -194,6 +194,7 @@ footer {
     margin-right: 53px;
     font-family: Poppins;
 }
+
 /*
 .p2Footer {
 
@@ -218,20 +219,33 @@ footer {
 }
 
 .bi-linkedin {
+    margin-top: 8px;
+    display: inline-flex;
+    gap: 10px;
     color: rgb(10, 100, 198);
+
+
 }
 
+
 .bi-google {
+    display: inline-flex;
+    margin-top: 8px;
+    gap: 10px;
     color: darkred;
 }
 
 .bi-github {
-
+    display: inline-flex;
+    margin-top: 8px;
+    gap: 10px;
     color: #FFFFFF;
-
 }
 
 .bi-browser-edge {
+    display: inline-flex;
+    margin-top: 8px;
+    gap: 10px;
     color: #004aad;
 }
 
@@ -293,33 +307,28 @@ footer {
 
     /*------------------------------------*/
     .bi-linkedin {
-        margin-top: 8px;
-        display: inline-flex;
-        gap: 10px;
+
         margin-left: 90px;
 
     }
 
 
     .bi-google {
-        display: inline-flex;
-        margin-top: 8px;
-        gap: 10px;
+
         margin-left: 35px;
+        margin-right: 10px;
     }
 
     .bi-github {
-        display: inline-flex;
-        margin-top: 8px;
-        gap: 10px;
+
         margin-left: 35px;
+        margin-right: 10px;
     }
 
     .bi-browser-edge {
-        display: inline-flex;
-        margin-top: 8px;
-        gap: 10px;
+
         margin-left: 35px;
+        margin-right: 10px;
     }
 
     footer {
@@ -351,18 +360,6 @@ footer {
 
 
     }
-/*
-    .p3Footer {
 
-        font-size: 12px;
-        justify-content: center;
-        margin-top: -7px;
-        margin-bottom: 1px;
-        margin-left: 134px;
-        margin-right: 35px;
-
-    }
-
-    */
 
 }
